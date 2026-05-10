@@ -1,0 +1,100 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-inter: 'Inter', sans-serif;
+
+    --background: 0 0% 100%;
+    --foreground: 216 50% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 216 50% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 216 50% 10%;
+
+    --primary: 216 60% 15%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 216 20% 96%;
+    --secondary-foreground: 216 50% 10%;
+
+    --muted: 216 15% 95%;
+    --muted-foreground: 216 15% 45%;
+
+    --accent: 24 95% 53%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 216 15% 90%;
+    --input: 216 15% 90%;
+    --ring: 24 95% 53%;
+
+    --radius: 0.625rem;
+
+    --chart-1: 216 60% 15%;
+    --chart-2: 24 95% 53%;
+    --chart-3: 216 30% 50%;
+    --chart-4: 24 70% 65%;
+    --chart-5: 216 15% 75%;
+  }
+
+  .dark {
+    --background: 216 50% 5%;
+    --foreground: 0 0% 95%;
+
+    --card: 216 45% 8%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 216 45% 8%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 24 95% 53%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 216 30% 15%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 216 25% 18%;
+    --muted-foreground: 216 15% 60%;
+
+    --accent: 24 95% 53%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 216 25% 18%;
+    --input: 216 25% 18%;
+    --ring: 24 95% 53%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-inter;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, hsl(24 95% 53%), hsl(24 80% 60%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
