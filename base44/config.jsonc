@@ -1,0 +1,9 @@
+{
+  "name": "Sertific\u0113ts kou\u010ds",
+  "site": {
+    "installCommand": "npm install",
+    "buildCommand": "npm run build",
+    "serveCommand": "npm run dev",
+    "outputDirectory": "./dist"
+  }
+}
